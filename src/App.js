@@ -1,7 +1,6 @@
-
 import Home from './pages/Home';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import ErrorBoundary from './components/ErrorBoundary';
@@ -9,19 +8,19 @@ import Layout from './layouts/Layout';
 import Application from './pages/Application';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <Layout />,
     errorElement: <ErrorBoundary />,
     children: [
       {
         element: <Application />,
-        path: "react-quick-attendance-taker/app",
+        path: "",
       },
 
       {
         element: <Application />,
-        path: "react-quick-attendance-taker/app"
+        path: "/app"
       }
     ]
   },
