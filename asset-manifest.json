@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-quick-attendance-taker/static/css/main.d016e579.css",
+    "main.js": "/react-quick-attendance-taker/static/js/main.dc3394a4.js",
+    "index.html": "/react-quick-attendance-taker/index.html",
+    "main.d016e579.css.map": "/react-quick-attendance-taker/static/css/main.d016e579.css.map",
+    "main.dc3394a4.js.map": "/react-quick-attendance-taker/static/js/main.dc3394a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d016e579.css",
+    "static/js/main.dc3394a4.js"
+  ]
+}
