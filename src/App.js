@@ -16,12 +16,12 @@ const router = createBrowserRouter([
     children: [
       {
         element: <Application />,
-        path: "",
+        path: "react-quick-attendance-taker/app",
       },
 
       {
         element: <Application />,
-        path: "/app"
+        path: "react-quick-attendance-taker/app"
       }
     ]
   },
