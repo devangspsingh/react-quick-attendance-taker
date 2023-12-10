@@ -5,9 +5,9 @@ This project is a React application that allows users to manage student attendan
 
 ## Live Demo
 
-[Live Demo hosted at github pages](https://devangspsingh.github.io/react-quick-attendance-taker/)
+[https://devangspsingh.github.io/react-quick-attendance-taker/](https://devangspsingh.github.io/react-quick-attendance-taker/)
 
-## Features
+## Featuresp
 
 - Search and filter student records
 - Export attendance records as text or PDF files
