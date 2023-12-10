@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-quick-attendance-taker/static/css/main.3025dccf.css",
-    "main.js": "/react-quick-attendance-taker/static/js/main.1ca1538c.js",
+    "main.css": "/react-quick-attendance-taker/static/css/main.087d0c08.css",
+    "main.js": "/react-quick-attendance-taker/static/js/main.939cf104.js",
     "index.html": "/react-quick-attendance-taker/index.html",
-    "main.3025dccf.css.map": "/react-quick-attendance-taker/static/css/main.3025dccf.css.map",
-    "main.1ca1538c.js.map": "/react-quick-attendance-taker/static/js/main.1ca1538c.js.map"
+    "main.087d0c08.css.map": "/react-quick-attendance-taker/static/css/main.087d0c08.css.map",
+    "main.939cf104.js.map": "/react-quick-attendance-taker/static/js/main.939cf104.js.map"
   },
   "entrypoints": [
-    "static/css/main.3025dccf.css",
-    "static/js/main.1ca1538c.js"
+    "static/css/main.087d0c08.css",
+    "static/js/main.939cf104.js"
   ]
 }
