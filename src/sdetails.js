@@ -204,5 +204,5 @@ const dataDict = lines.slice(1).map(line => {
 });
 
 const student_records = dataDict
-console.log(dataDict);
+// console.log(dataDict);
 export default student_records
