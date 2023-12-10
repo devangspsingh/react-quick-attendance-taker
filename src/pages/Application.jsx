@@ -17,6 +17,10 @@ const Application = () => {
     const [attendanceFormat, setAttendanceFormat] = useState('All')
     const share_atten_ref = useRef()
 
+    const currentDate = new Date().toLocaleDateString();
+
+    const [createPdf, setCreatePdf] = useState(false)
+
     const [searchValue, setSearchValue] = useState("");
     // const [filter, setFilter] = useState("all");
 
@@ -223,15 +227,30 @@ const Application = () => {
                         <span ref={share_atten_ref}>Share Text</span> <FaShare />
                     </button>
 
-                    <PDFDownloadLink className='font-semibold bg-green-500 p-1 px-2 rounded-md w-1/2'
-                        document={<MyDocument records={records_for_pdf(records, attendanceFormat)} />}
-                        fileName="quick-attendance-dspsc.pdf">
-                        {({ blob, url, loading, error }) =>
-                            loading
-                                ? 'Loading document...'
-                                : <span className='gap-2 flex justify-center items-center '>Download <FaFilePdf /></span>
-                        }
-                    </PDFDownloadLink>
+
+                    {
+                        createPdf ?
+                            <PDFDownloadLink onClick={() => {
+                                setTimeout(() => {
+                                    setCreatePdf(!true)
+                                }, 1000)
+                            }} className='font-semibold bg-green-500 p-1 px-2 rounded-md w-1/2'
+                                document={<MyDocument records={records_for_pdf(records, attendanceFormat)} />}
+                                fileName={`attendance-cs2ndyr-${currentDate}.pdf`}>
+                                {({ blob, url, loading, error }) =>
+                                    loading
+                                        ? 'Loading document...'
+                                        : <span className='gap-2 flex justify-center items-center '>Download <FaFilePdf /></span>
+                                }
+                            </PDFDownloadLink>
+                            : <button onClick={() => {
+                                setCreatePdf(true)
+                            }}
+                                className='flex justify-center items-center font-semibold w-1/2 gap-2 bg-yellow-500 rounded-md px-2 py-1'>
+                                <span ref={share_atten_ref}>Create Pdf</span> <FaFilePdf />
+                            </button>
+                    }
+
                 </div>
             </div>
 
