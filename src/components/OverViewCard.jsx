@@ -150,7 +150,7 @@ const OverViewCard = (props) => {
                             }, 1000)
                         }} className='font-semibold bg-green-500 p-1 px-2 rounded-md w-1/2'
                             document={<MyDocument records={records_for_pdf(records, attendanceFormat)} />}
-                            fileName={`attendance-cs2ndyr-${currentDate}.pdf`}>
+                            fileName={`attendance-cs3rdyr-${currentDate}.pdf`}>
                             {({ blob, url, loading, error }) =>
                                 loading
                                     ? 'Loading document...'
